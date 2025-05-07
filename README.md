@@ -26,6 +26,8 @@ Each session is led by subject matter experts and is designed with hands-on prac
 - Interactive practice exercises and hands-on activities
 
 [Access Oracle Live SQL for practice](https://livesql.oracle.com/)
+[LinkedIn Learning Quick Start Guide to SQL](https://www.linkedin.com/learning/quick-start-guide-to-sql)
+[Oracle Samples GitHub Repository Oracle DB Examples](https://github.com/oracle-samples/oracle-db-examples/tree/main)
 
 ### GitHub Basics Workshop
 
