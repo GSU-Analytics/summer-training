@@ -1,0 +1,122 @@
+erDiagram
+    AD_ACADEMIC_SESSION {
+        number SESSION_ID PK
+        varchar2 SESSION_NAME
+    }
+    
+    AD_DEPARTMENTS {
+        number DEPARTMENT_ID PK
+        varchar2 DEPARTMENT_NAME
+        varchar2 HOD
+    }
+    
+    AD_COURSE_DETAILS {
+        number COURSE_ID PK
+        varchar2 COURSE_NAME
+        number SESSION_ID FK
+        number DEPARTMENT_ID FK
+    }
+    
+    AD_JOBS {
+        varchar2 JOB_ID PK
+        varchar2 JOB_TITLE
+        number MIN_SALARY
+        number MAX_SALARY
+    }
+    
+    AD_FACULTY_DETAILS {
+        number FACULTY_ID PK
+        varchar2 FACULTY_NAME
+        varchar2 FACULTY_EMAIL
+        varchar2 FACULTY_PHONE
+        varchar2 FACULTY_ADDRESS
+        number DEPARTMENT_ID FK
+        varchar2 JOB_ID FK
+    }
+    
+    AD_FACULTY_LOGIN_DETAILS {
+        number FACULTY_ID PK,FK
+        varchar2 USERNAME
+        varchar2 PASSWORD
+    }
+    
+    AD_FACULTY_COURSE_DETAILS {
+        number FACULTY_ID FK
+        number COURSE_ID FK
+    }
+    
+    AD_STUDENT_DETAILS {
+        number STUDENT_ID PK
+        varchar2 STUDENT_NAME
+        varchar2 STUDENT_EMAIL
+        varchar2 STUDENT_PHONE
+        varchar2 STUDENT_ADDRESS
+        number DEPARTMENT_ID FK
+    }
+    
+    AD_PARENT_INFORMATION {
+        number PARENT_ID PK
+        number STUDENT_ID FK
+        varchar2 PARENT_NAME
+        varchar2 PARENT_EMAIL
+        varchar2 PARENT_PHONE
+        varchar2 PARENT_ADDRESS
+    }
+    
+    AD_STUDENT_COURSE_DETAILS {
+        number STUDENT_ID FK
+        number COURSE_ID FK
+    }
+    
+    AD_STUDENT_COURSE_INFO {
+        number STUDENT_ID FK
+        number COURSE_ID FK
+        varchar2 GRADE
+    }
+    
+    AD_STUDENT_ATTENDANCE {
+        number STUDENT_ID FK
+        number COURSE_ID FK
+        date ATTEND_DATE
+        varchar2 STATUS
+    }
+    
+    AD_EXAM_TYPE {
+        varchar2 EXAM_TYPE PK
+        varchar2 EXAM_NAME
+        varchar2 EXAM_DESC
+    }
+    
+    AD_EXAM_DETAILS {
+        number EXAM_ID PK
+        varchar2 EXAM_TYPE FK
+        date START_DATE
+        varchar2 NAME
+    }
+    
+    AD_EXAM_RESULTS {
+        number STUDENT_ID FK
+        number EXAM_ID FK
+        number COURSE_ID FK
+        number MARKS
+    }
+    
+    AD_ACADEMIC_SESSION ||--o{ AD_COURSE_DETAILS : "has"
+    AD_DEPARTMENTS ||--o{ AD_COURSE_DETAILS : "offers"
+    AD_DEPARTMENTS ||--o{ AD_FACULTY_DETAILS : "employs"
+    AD_DEPARTMENTS ||--o{ AD_STUDENT_DETAILS : "enrolls"
+    AD_JOBS ||--o{ AD_FACULTY_DETAILS : "defines"
+    AD_FACULTY_DETAILS ||--|| AD_FACULTY_LOGIN_DETAILS : "has"
+    AD_FACULTY_DETAILS ||--o{ AD_FACULTY_COURSE_DETAILS : "teaches"
+    AD_COURSE_DETAILS ||--o{ AD_FACULTY_COURSE_DETAILS : "taught by"
+    AD_STUDENT_DETAILS ||--o{ AD_PARENT_INFORMATION : "has"
+    AD_STUDENT_DETAILS ||--o{ AD_STUDENT_COURSE_DETAILS : "takes"
+    AD_COURSE_DETAILS ||--o{ AD_STUDENT_COURSE_DETAILS : "taken by"
+    AD_STUDENT_DETAILS ||--o{ AD_STUDENT_COURSE_INFO : "receives grade in"
+    AD_COURSE_DETAILS ||--o{ AD_STUDENT_COURSE_INFO : "has grades for"
+    AD_STUDENT_DETAILS ||--o{ AD_STUDENT_ATTENDANCE : "attends"
+    AD_COURSE_DETAILS ||--o{ AD_STUDENT_ATTENDANCE : "has attendance for"
+    AD_EXAM_TYPE ||--o{ AD_EXAM_DETAILS : "categorizes"
+    AD_STUDENT_DETAILS ||--o{ AD_EXAM_RESULTS : "takes"
+    AD_EXAM_DETAILS ||--o{ AD_EXAM_RESULTS : "has results for"
+    AD_COURSE_DETAILS ||--o{ AD_EXAM_RESULTS : "has exams for"

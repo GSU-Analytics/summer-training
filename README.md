@@ -32,7 +32,7 @@ Each session is led by subject matter experts and is designed with hands-on prac
 ### GitHub Basics Workshop
 
 **Estimated Duration:** 4 hours  
-**Format:** Lecture with demonstrations  
+**Format:** Lecture with demonstrations 
 **Topics:**
 - GitHub concepts and vocabulary (repositories, branches, commits, pull requests)
 - GitHub for collaboration and version control
