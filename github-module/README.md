@@ -24,6 +24,13 @@
   - [Resolving Merge Conflicts](#4-resolving-merge-conflicts)
 - [Part II: Project Management with Git](#part-ii-project-management-with-git)
   - [GitHub Project Tools Overview](#1-github-project-tools-overview)
+    - [Planning Board](#planning-board)
+    - [Roadmaps](#roadmaps)
+    - [Issues](#issues)
+    - [Development Branches](#development-branches)
+    - [Pull Requests](#pull-requests)
+    - [Reviewers and Merges](#reviewers-and-merges)
+    - [Closing Issues, PRs, and Branches](#closing-issues-prs-and-branches)
   - [GitHub Project Walkthrough](#2-github-project-walkthrough)
 
 ## Part I: Git/GitHub Basics
@@ -689,3 +696,45 @@ git branch -d feature/quarterly-sales-analysis
 #### 9. Update the Project Board
 
 The issue automatically moves to "Done" on your project board.
+
+## Advanced Git and GitHub Topics Not Covered
+
+This introduction provides a solid foundation for getting started with Git and GitHub, but there are many advanced features and capabilities not covered here. To continue your learning journey, here are some important topics to explore next.
+
+### Table of Contents for Advanced Topics
+- [GitHub Pages](#github-pages)
+- [GitHub Actions](#github-actions)
+- [GitHub Wikis](#github-wikis)
+- [Advanced Git Commands and Features](#advanced-git-commands-and-features)
+- [GitHub Project Management](#github-project-management)
+- [Git Aliases and Configuration](#git-aliases-and-configuration)
+- [Troubleshooting Common Git Problems](#troubleshooting-common-git-problems)
+
+### GitHub Pages
+GitHub Pages allows you to host websites directly from your GitHub repositories. This feature is excellent for creating project documentation, personal portfolios, or simple web applications. Learn more in Chapter 17, "More with GitHub" (p.270-274).
+
+### GitHub Actions
+GitHub Actions provides powerful automation and CI/CD (Continuous Integration/Continuous Deployment) capabilities. You can automate workflows like testing, building, and deploying your code whenever you push changes. This topic is beyond the scope of the book but is well-documented in GitHub's official documentation.
+
+### GitHub Wikis
+For more comprehensive project documentation beyond the README file, GitHub Wikis offer a full-featured documentation system. This feature is covered in Chapter 17, "More with GitHub" (p.267-270).
+
+### Advanced Git Commands and Features
+- **Git Stashing**: Save changes temporarily without committing them. See Chapter 16, "Advanced Git" (p.255-260).
+- **Git Rebase**: An alternative to merging that creates a cleaner project history. This topic is briefly mentioned in Chapter 14, "More About Conflicts" (p.290-291).
+- **Git Hooks**: Custom scripts that run before or after Git events like commit or push. This advanced topic is not covered in the book.
+- **Git Bisect**: A binary search tool to find which commit introduced a bug. This topic is not covered in the book.
+
+### GitHub Project Management
+More advanced project management features include:
+- **Milestones**: Group issues and pull requests for specific project phases or releases. See Chapter 17, "More with GitHub" (p.277-281).
+- **GitHub Projects (Advanced)**: Create custom workflows and automation for your project boards. This is briefly covered in Chapter 17, "More with GitHub" (p.277-281).
+- **Release Management**: Create tagged releases with bundled binaries and release notes. See Chapter 17, "More with GitHub" (p.274-277).
+
+### Git Aliases and Configuration
+Customize your Git experience by creating shortcuts for commonly used commands. Learn more in Chapter 20, "Making Git Yours with Aliases" (p.301-306).
+
+### Troubleshooting Common Git Problems
+When you encounter issues with Git, Chapter 18, "Common Git Problems" (p.283-294) provides solutions to many frequent challenges.
+
+As you become more comfortable with the basics, exploring these advanced topics will help you leverage the full power of Git and GitHub for your development workflow. Remember that Git is a deep tool with many capabilities – it's normal and expected to learn new features as you need them rather than trying to master everything at once.
