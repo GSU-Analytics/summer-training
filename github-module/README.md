@@ -1,4 +1,4 @@
-# Git and GitHub for Developers
+# Git and GitHub for Project Management
 
 ## Table of Contents
 - [Part I: Git/GitHub Basics](#part-i-gitgithub-basics)
