@@ -50,8 +50,6 @@ This training is intended for experienced users of Oracle SQL Developer who quer
   * ANY, ALL, and performance notes
 * Reference: Chapter 8, pp. 323–376
 
-
-
 ## Single-Row Built-In Functions
 
 * **Character Functions**: `UPPER`, `LOWER`, `INITCAP`, `SUBSTR`, `INSTR`, `TRIM`, `LPAD`
@@ -60,8 +58,6 @@ This training is intended for experienced users of Oracle SQL Developer who quer
 * **Null Handling**: `NVL`, `NVL2`, `COALESCE`, `NULLIF`, `LNNVL`
 * **Conditional Logic**: `DECODE`, `CASE`
 * Reference: Chapter 4, pp. 133–187
-
-
 
 ## Date and Time Logic
 

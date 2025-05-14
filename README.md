@@ -40,9 +40,9 @@ Each session is led by subject matter experts and is designed with hands-on prac
 - Interface walkthrough and real-world use cases
 - Hands-on examples using personal GitHub accounts
 
-### AI at Work: Using Microsoft Co-Pilot
+### AI at Work: Using Microsoft Copilot
 
-**Estimated Duration:** 4 hours
+**Estimated Duration:** 1.5 hours
 **Format:** Lecture with demonstrations
 **Topics:**
 - Practical use cases for Microsoft Co-Pilot
