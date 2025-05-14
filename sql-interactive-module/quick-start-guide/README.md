@@ -1,6 +1,6 @@
 # Quick Start Guide to SQL - Course Summary
 
-This document summarizes the LinkedIn Learning course "Quick Start Guide to SQL", which provides a comprehensive introduction to SQL fundamentals with a focus on Oracle SQL syntax.
+This document summarizes the LinkedIn Learning course [Quick Start Guide to SQL](https://www.linkedin.com/learning/quick-start-guide-to-sql), which provides a comprehensive introduction to SQL fundamentals with a focus on Oracle SQL syntax.
 
 ## Table of Contents
 

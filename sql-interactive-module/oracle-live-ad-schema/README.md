@@ -1,6 +1,6 @@
 # AD (Academic) Schema Documentation
 
-This document provides comprehensive documentation for the Academic Database (AD) schema found in Oracle Live SQL. The AD schema models an educational institution's database system, including students, faculty, courses, departments, and related academic processes.
+This document provides comprehensive documentation for the Academic Database (AD) schema found in  [Oracle Live SQL](https://livesql.oracle.com/). The AD schema models an educational institution's database system, including students, faculty, courses, departments, and related academic processes.
 
 ## Schema Overview
 

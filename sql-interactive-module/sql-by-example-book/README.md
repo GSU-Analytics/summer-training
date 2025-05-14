@@ -1,8 +1,6 @@
 # Oracle SQL Training: Intermediate to Advanced Reporting
 
-This training is intended for experienced users of Oracle SQL Developer who query databases for analytical reporting. The focus is on writing efficient, professional-grade SQL for multi-table reporting and advanced data manipulation.
-
-
+This training is intended for experienced users of Oracle SQL Developer who query databases for analytical reporting. The lessons are taken from focus [Oracle SQL by Example 4th Edition](https://www.oreilly.com/library/view/oracle-sql-by/9780137047345/) and focus on on writing efficient, professional-grade SQL for multi-table reporting and advanced data manipulation. 
 
 ## Setup Instructions
 
@@ -12,8 +10,6 @@ This training is intended for experienced users of Oracle SQL Developer who quer
 * Run `createStudent.sql` to build schema
 * Use `rebuildStudent.sql` or `dropStudent.sql` as needed
 * Add supplemental tables using `sql_book_add_tables.sql`
-
-
 
 ## Warm-Up: Single-Table Operations Review
 
@@ -27,15 +23,11 @@ This training is intended for experienced users of Oracle SQL Developer who quer
 * Applying built-in functions (`UPPER`, `ROUND`, `NVL`, etc.)
 * Reference: Chapters 2–3, pp. 49–101
 
-
-
 ## Aggregate Queries and GROUP BY Logic
 
 * **Lab 6.1**: Aggregates – `SUM`, `COUNT`, `AVG`, `MIN`, `MAX`, `COUNT(DISTINCT)`
 * **Lab 6.2**: Grouping & Filtering – `GROUP BY`, `HAVING`, `GROUPING SETS`, `ROLLUP`, `CUBE`
 * Reference: Chapter 6, pp. 263–283
-
-
 
 ## Joins
 
@@ -47,8 +39,6 @@ This training is intended for experienced users of Oracle SQL Developer who quer
   * ANSI vs Oracle `(+)` syntax
   * Multicolumn joins and self-joins
 * Reference: Chapter 7 & 10, pp. 285–427
-
-
 
 ## Subqueries
 
